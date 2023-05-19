@@ -1,0 +1,343 @@
+@font-face {
+  font-family: 'GyeonggiTitleM';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TmonMonsori';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NEXONFootballGothicBA1';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXONFootballGothicBA1.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'GmarketSansMedium';
+}
+body{
+  background-color:#ffffff;
+  color:#2990d0;
+  max-width: 100%;
+  font-size: 25px;
+  overflow-x: hidden;
+}
+.container{
+  width: 100%;
+  height: 3600px;
+  margin: auto;
+  padding: auto;
+}
+a{
+  text-decoration: none;
+  display: inline;
+  color: #333536;
+}
+ul{
+  list-style: none;
+}
+header{
+  width: 100%;
+  height: 100px;
+  background: #fff;
+  font-family:'GyeonggiTitleM';
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap; 
+  position:sticky;
+  top:0;
+  z-index: 4;   
+}
+header nav{
+  margin: 100px;
+}
+.header-logo{
+  padding-left: 200px;
+  padding-right: 200px;
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+.meinMenu{
+  width: 50%;
+  height: 100%;
+  display:flex;
+  white-space: nowrap;
+}
+.mainMenu > a{
+  width: 50%;
+  padding: 40px 40px;
+  text-align: center;
+  color:#2990d0;
+}
+.mainMenu > a:hover{
+  color: #000000;
+  font-size: 28px;
+}
+.contents{
+  width: 100%; 
+  height: 1200px; 
+  margin: 0px auto; 
+  position: relative;
+  background-color: #2990d0;
+  font-family: 'NEXONFootballGothicBA1';
+}
+.contents > video{
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 50%;
+} 
+#contents-video{
+  border-radius: 20px;
+}
+.jb-texts{
+  position: absolute;
+  width: 40%;
+  height: 20%;
+  right: 1%;
+  top: 15%;
+}
+.jb-texts h1{ 
+  text-align: left;
+  color: white;
+  font-size: 120px;
+}
+.jb-texts h3{ 
+  text-align: left;
+  color: white;
+  font-size: 60px;
+}
+.jb-texts h4{ 
+  margin-left: 1%;
+  margin-top: -3%;
+  text-align: left;
+  color: white;
+  font-size: 40px;
+}
+#btn{
+  position: absolute;
+  left: 60%;
+  top: 40%;
+}
+.invi{
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  position: relative;
+  display: block;
+  font-size: 25px;
+  z-index: 2;
+  overflow: hidden;
+}
+.invi:hover{
+  color: #fff;
+}
+.invi:focus{
+  outline: none;
+}
+.invi::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  top: 0%;
+  right: 100%;
+  border-radius: 8px;
+  transition: all 0.2s;
+  z-index: -1;
+}
+.invi:hover::before{
+  transform: translateX(100%);
+  
+}
+.first-banner{ 
+  font-family: 'NEXONFootballGothicBA1';
+  background-color: white;
+  width: 100%;
+  height: 1200px;  
+}
+.video-one{
+  padding-left: 10%;
+  padding-top: 20%;
+  float: left;
+}
+#video-one{
+  border-radius: 20px;
+}
+.fir-ba-text{
+  color: #000000;
+  float:right;
+  padding-right: 10%;
+  padding-top: 30%;
+  font-size: 30px;
+}
+.fir-funtion{
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 1%;
+  margin-left: 0;
+  font-size: 25px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.fir-funtion:hover{
+  color: #fff;
+}
+.fir-funtion:focus{
+  outline: none;
+}
+.fir-funtion::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  left: 0;
+  border-radius: 8px;
+  top: 100%;
+  transition: all 0.2s;
+  z-index: -1;
+}
+.fir-funtion:hover::before{
+  transform: translateY(-100%);
+  
+}
+.fir-ba-text h4{
+  margin-top: 10px;
+}
+.second-baaner{
+  width: 100%;
+  background-color: white;
+  height: 1200px;
+}
+.video-two{
+  padding-top: 20%;
+  padding-right: 10%;
+  float: right;
+  box-sizing: border-box;
+}
+#video-two{
+  border-radius: 20px;
+}
+.sec-ba-text{
+  padding-left: 15%;
+  font-family: 'NEXONFootballGothicBA1';
+  padding-top: 30%;
+  float:left;
+  font-size: 30px;
+  color: #000000;
+  text-align: right;
+}
+.sec-funtion{
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 1%;
+  margin-left: 31%;
+  font-size: 25px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.sec-funtion:hover{
+  color: #fff;
+}
+.sec-funtion:focus{
+  outline: none;
+}
+.sec-funtion::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  left: 0;
+  border-radius: 8px;
+  top: 100%;
+  transition: all 0.2s;
+  z-index: -1;
+}
+.sec-funtion:hover::before{
+  transform: translateY(-100%);
+  
+}
+.sec-ba-text h4{
+  margin-top: 20px;
+}
+footer{
+  font-family: 'GmarketSansMedium';
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background-color: darkgray;
+}
+.footer-logo > img{
+  width: 300px;
+  height: 100px;
+  float: left;
+  padding-top: 0.3%;
+  margin-left: 16.5%;
+  margin-right: 5%;
+}
+.copyright{
+  width: 30%;
+  text-align: center;
+  color: white;
+  padding-left: 10%;
+  font-size: 15px;
+}
+.footer-mainMenu {
+  width: 700px;
+  height: 40%; 
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  position:relative;
+  font-size: 18px;
+  color: #000000;
+}
+.footer-mainMenu > h3{
+  width:20%;
+  text-align: left;
+  color:#000000;
+}
+
+.footer-subMenu{
+  width: 750px;
+  display:flex;
+  justify-content: space-between;
+  position:absolute;
+  top:55px;
+  z-index:1;
+  
+}
+.footer-subMenu > ul{
+  width:25%;
+  text-align: left;
+}
+.footer-subMenu > ul > li > a{
+  color: #333536;
+}
+.footer-subMenu > ul > li > a:hover{
+  color:#ffffff;
+
+}
+.more-btn{
+  display: none;
+}
